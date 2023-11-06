@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function LoginPage() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loginSuccess, setLoginSuccess] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
     // In a real application, this is where you would make an API call to a backend for authentication.
     // For this example, we'll just check if the email and password match a predefined set of credentials.
-    if (email === 'example@example.com' && password === 'password') {
+    if (email === "example@example.com" && password === "password") {
       setLoginSuccess(true);
     } else {
       setLoginSuccess(false);
@@ -46,7 +46,9 @@ function LoginPage() {
                     required
                   />
                 </div>
-                <button type="submit" className="btn btn-primary btn-block">Login</button>
+                <button type="submit" className="btn btn-primary btn-block">
+                  Login
+                </button>
               </form>
             </div>
           </div>
